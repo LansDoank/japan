@@ -1,0 +1,772 @@
+*,
+html {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #1F1F1F;
+}
+
+*,
+h1 {
+    font-family: 'Ubuntu',sans-serif;
+}
+
+*,
+p {
+    font-family: 'Montserrat',sans-serif;
+}
+
+
+header {
+    color: white;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    padding: 1rem 2rem;
+    filter: blur(0.8);
+    z-index: 9999;
+}
+
+.logo {
+    width: 30%;
+}
+
+nav {
+    width: 70%;
+    display: flex;
+    justify-content: end;
+}
+
+nav ul,nav ul li,nav ul li a {
+    display: flex;
+    text-decoration: none;
+    color: white;
+    padding: 0px 1.5rem;
+}
+
+/* Hamburger */
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    height: 20px;
+    justify-content: space-between;
+    position: relative;
+}
+
+.menu-toggle input {
+    position: absolute;
+    width: 40px;
+    height: 28px;
+    left: -6px;
+    top: -5px;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.menu-toggle span {
+    display: block;
+    width: 28px;
+    height: 3px;
+    background-color: white;
+    border-radius: 3px;
+    transition: all 0.5s;
+}
+
+/* Hamburger Animation */
+.menu-toggle span:nth-child(2) {
+    background-color: white;
+    transform-origin: 0 0;
+}
+/* Ani Red */
+
+.menu-toggle span:nth-child(4) {
+    background-color: white;
+    transform-origin: 0 100%;
+}
+/*  */
+.menu-toggle input:checked ~ span:nth-child(2) {
+    transform: rotate(45deg); translate: -1px, 1px;
+}
+
+.menu-toggle input:checked ~ span:nth-child(4) {
+    transform: rotate(-45deg); translate: -1px, 0px;
+}
+
+.menu-toggle input:checked ~ span:nth-child(3) {
+    transform: scale(0)
+}
+
+
+main {
+    color: white;
+
+}
+
+
+
+#home {
+    width: 100%;
+    height: 100vh;
+    background-image: url(img/pagoda.jpg);
+    background-position: right;
+    display: flex; 
+    justify-content: start;
+    align-items: end;
+    font-size: 2rem;
+    padding: 2rem;
+}
+
+#home h1 {
+    width: 50%;
+}
+
+#destination {
+    padding: 2rem;
+}
+
+#destination h1 {
+    font-size: 3rem;
+    padding: 1rem;
+}
+
+.tokyo {
+    display: flex;
+    padding: 2rem;
+    padding-bottom: 10rem;
+}
+
+.tokyo figure {
+    width: 40%;
+    height: 20rem;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.tokyo figure img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: bottom;
+}
+
+.tokyo aside {
+    width: 60%;
+    padding: 2rem;
+}
+
+.tokyo h2 {
+    font-size: 2rem;
+    padding: 0px 1rem;
+}
+
+.tokyo p {
+    font-size: 1.7rem;
+    text-align: center;
+    padding: 1.8rem 0px;
+}
+
+.kyoto {
+    display: flex;
+    padding: 2rem;
+    padding-bottom: 10rem;
+}
+
+.kyoto figure {
+    width: 40%;
+    height: 20rem;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.kyoto figure img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: bottom;
+}
+
+.kyoto aside {
+    width: 60%;
+    padding: 2rem;
+}
+
+.kyoto h2 {
+    font-size: 2rem;
+    padding: 0px 2rem;
+}
+
+.kyoto p {
+    padding: 1.8rem 0px;
+    font-size: 1.7rem;
+    text-align: center;
+}
+
+.osaka {
+    display: flex;
+    padding: 2rem;
+    padding-bottom: 10rem;
+}
+
+.osaka figure {
+    width: 40%;
+    height: 20rem;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.osaka figure img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: bottom;
+}
+
+.osaka aside {
+    width: 60%;
+    padding: 2rem;
+}
+
+.osaka h2 {
+    font-size: 2rem;
+    padding: 0px 1rem;
+}
+
+.osaka p {
+    padding: 1.8rem 0px;
+    font-size: 1.7rem;
+    text-align: center;
+}
+
+.hokkaido {
+    display: flex;
+    padding: 2rem;
+    padding-bottom: 10rem;
+}
+
+.hokkaido figure {
+    width: 40%;
+    height: 20rem;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.hokkaido figure img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: bottom;
+}
+
+.hokkaido aside {
+    width: 60%;
+    padding: 2rem;
+}
+
+.hokkaido h2 {
+    font-size: 2rem;
+    padding: 0px 1rem;
+}
+
+.hokkaido p {
+    padding: 1.8rem 0px;
+    font-size: 1.7rem;
+    text-align: center;
+}
+.nara {
+    display: flex;
+    padding: 2rem;
+}
+
+.nara figure {
+    width: 40%;
+    height: 20rem;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.nara figure img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.nara aside {
+    width: 60%;
+    padding: 2rem;
+}
+
+.nara h2 {
+    font-size: 2rem;
+    padding: 0px 1rem;
+}
+
+.nara p {
+    padding: 1.8rem 0px;
+    font-size: 1.7rem;
+    text-align: center;
+}
+
+#gallery {
+    width: 100%;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+#gallery h1 {
+    font-size: 3rem;
+    padding: 2rem 0px;
+}
+
+.container-gallery {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.slider {
+    position: relative;
+    width: 100%;
+    height: 40rem;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.slider img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.slider figcaption {
+    font-size: 2rem;
+    font-family: 'Ubuntu',sans-serif;
+    width: 100%;
+    position: absolute;
+    background-color: rgb(0,0,0,0.2);
+    bottom: 0;
+    padding: 2rem;
+}
+
+.gallery {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 2rem 0px;
+}
+
+.gallery figure {
+    position: relative;
+    width: 48.5%;
+    overflow: hidden;
+    border-radius: 10px;
+    margin-top: 2rem;
+    cursor: pointer;
+}
+
+.gallery figure img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.gallery figure figcaption {
+    font-family: 'Ubuntu',sans-serif;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    background-color: rgb(0,0,0,0.3);
+    padding: 1rem;
+    font-size: 1.5rem;
+}
+
+#cuisine {
+    padding: 2rem;
+}
+
+#cuisine h1 {
+    font-size: 3rem;
+}
+
+#cuisine  figcaption {
+    font-family: 'Ubuntu',sans-serif;
+    font-weight: 500;
+}
+
+.cuisine-top {
+    padding: 2rem 0px;
+    width: 100%;
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: start;
+}
+
+.big-cuisine {
+    position: relative;
+    width: 40%;
+    height: 40rem;
+    overflow: hidden;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.big-cuisine img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.big-cuisine figcaption {
+    position: absolute;
+    bottom: 0;
+    padding: 1rem;
+    background-color: rgb(0,0,0,0.2);
+    width: 100%;
+}
+
+.medium-cuisine {
+    cursor: pointer;
+    position: relative;
+    width: 30%;
+    height: 30rem;
+    overflow: hidden;
+    font-size: 1.5rem;
+}
+
+.medium-cuisine img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.medium-cuisine figcaption {
+    position: absolute;
+    bottom: 0;
+    padding: 1rem;
+    background-color: rgb(0,0,0,0.2);
+    width: 100%;
+}
+
+.little-cuisine {
+    cursor: pointer;
+    position: relative;
+    width: 25%;
+    height: 25rem;
+    overflow: hidden;
+    font-size: 1rem;
+}
+
+.little-cuisine img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.little-cuisine figcaption {
+    position: absolute;
+    bottom: 0;
+    padding: 1rem;
+    background-color: rgb(0,0,0,0.2);
+    width: 100%;
+}
+
+.cuisine-bottom {
+    padding: 2rem 0px;
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 2rem;
+    justify-content: center;
+    align-items: start;
+    padding-bottom: 10rem;
+}
+
+footer {
+    width: 100%;
+    height: 100vh;
+    background-image: url(img/mountain\ \(2\).jpg);
+    background-size: cover;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+footer h1 {
+    font-size: 4rem;
+    padding: 2rem;
+}
+
+.container-footer {
+    width: 100%;
+    background-color: rgb(0,0,0,0.3);
+}
+
+.footer-top {
+    display: flex;
+    padding: 1rem;
+    justify-content: space-between;
+}
+
+
+.footer-top h4 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.footer-top p {
+    padding: 0.3rem 0px;
+}
+
+.footer-top p a {
+    color: white;
+    text-decoration: none;
+    font-weight: 400;
+}
+
+.footer-bottom {
+    background-color: rgb(0,0,0,0.5);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+@media screen and (max-width:1024px) {
+
+    header {
+        justify-content: space-between;
+    }
+
+    nav ul,nav ul li,nav ul li a {
+        font-size: 0.8rem;
+        padding: 0 1rem;
+    }
+
+    #home h1 {
+        font-size: 2rem;
+        width: 60%;
+    }
+
+    #destination h1 {
+        font-size: 2rem;
+    }
+
+    #destination p {
+        font-size: 1.3rem;
+    }
+
+    .tokyo, .kyoto, .nara, .hokkaido, .osaka {
+        display: flex;
+        align-items: center;
+        padding-bottom: 4rem;
+    }
+
+    .tokyo figure,.kyoto figure, .osaka figure,.hokkaido figure, .nara figure {
+        height: 20rem;
+    }
+
+
+
+    #gallery h1 {
+        font-size: 2rem;
+    }
+
+    .slider {
+        height: 30rem;
+    }
+
+    .gallery {
+        padding: 0;
+    }
+
+    #cuisine h1 {
+        font-size: 2rem;
+    }
+
+    .big-cuisine {
+        height: 25rem;
+    }
+
+    .medium-cuisine {
+        height: 20rem;
+    }
+
+    .little-cuisine {
+        height: 15rem;
+    }
+}
+
+@media screen and (max-width:500px ) {
+
+
+    .menu-toggle {
+        display: flex;
+    }
+    nav ul{
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100vh;
+        flex-direction: column;
+        background-color: rgb(0,0,0,0.7);
+        align-items: center;
+        justify-content: space-evenly;
+        z-index: -1;
+        transform: translateX(100%);
+        transition: all 1s;
+        opacity: 0;
+    }
+
+    nav ul.slide {
+        opacity: 1;
+        transform: translateX(0);
+    }
+   
+
+    #home {
+        height: 100vh;
+    }
+
+    #home h1 {
+        font-size: 1.5rem;
+        width: 70%;
+    }
+
+    #destination {
+        padding: 1rem;
+    }
+
+    #destination h1 {
+        padding: 0 1rem;
+    }
+
+    #destination h2 {
+        font-size: 1.5rem;
+    }
+
+    #destination p {
+        font-size: 1rem;
+        padding: 1rem 0;
+    }
+
+    .tokyo, .kyoto, .nara, .hokkaido, .osaka {
+        padding: 0;
+    }
+
+    .tokyo figure,.kyoto figure, .osaka figure,.hokkaido figure, .nara figure {
+        height: 15rem;
+    }
+
+    #destination aside {
+        padding: 0.8rem;
+    }
+
+    #gallery {
+        padding: 1rem;
+    }
+
+    #gallery h1 {
+        font-size: 2rem;
+        padding: 1rem;
+    }
+
+    .slider {
+        height: 20rem;
+    }
+
+    .slider figcaption {
+        padding: 1rem;
+        font-size: 1.5rem;
+    }
+
+    .gallery figure figcaption {
+        padding: 0.5rem;
+        font-size: 1rem;
+    }
+
+    #cuisine {
+        padding: 1rem;
+    }
+
+    #cuisine h1 {
+        padding: 1rem;
+    }
+
+    .cuisine-top {
+        gap: 1rem;
+    }
+
+    .cuisine-bottom {
+        gap: 1rem;
+    }
+
+    .big-cuisine {
+        height: 15rem;
+        font-size: 1.5rem;
+    }
+
+    .big-cuisine figcaption {
+        padding: 0.8rem;
+    }
+
+    .medium-cuisine {
+        height: 12rem;
+        font-size: 1rem;
+    }
+
+    .medium-cuisine figcaption {
+        padding: 0.7rem;
+    }
+
+    .little-cuisine {
+        height: 10rem;
+        font-size: 0.7rem;
+    }
+
+    .little-cuisine figcaption {
+        padding: 0.5rem;
+    }
+
+    .cuisine-bottom {
+        padding-bottom: 5rem;
+    }
+
+    footer {
+        position: relative;
+        background-position: center;
+        z-index: 9999999;
+    }
+
+    footer h1 {
+        font-size: 2rem;
+    }
+
+    .footer-top h4 {
+        font-size: 1rem;
+    }
+
+    .footer-top p {
+        font-size: 0.6rem;
+    }
+
+    .footer-bottom p {
+        font-size: 0.8rem;
+    }
+}
