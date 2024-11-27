@@ -114,6 +114,7 @@ main {
     height: 100vh;
     background-image: url(img/pagoda.jpg);
     background-position: right;
+    background-repeat: no-repeat;
     display: flex; 
     justify-content: start;
     align-items: end;
@@ -122,7 +123,7 @@ main {
 }
 
 #home h1 {
-    width: 50%;
+    width: 60%;
 }
 
 #destination {
@@ -140,21 +141,21 @@ main {
     padding-bottom: 10rem;
 }
 
-.tokyo figure {
+.tokyo aside {
     width: 40%;
     height: 20rem;
     overflow: hidden;
     border-radius: 10px;
 }
 
-.tokyo figure img {
+.tokyo aside img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     object-position: bottom;
 }
 
-.tokyo aside {
+.tokyo section {
     width: 60%;
     padding: 2rem;
 }
@@ -176,28 +177,28 @@ main {
     padding-bottom: 10rem;
 }
 
-.kyoto figure {
+.kyoto aside {
     width: 40%;
     height: 20rem;
     overflow: hidden;
     border-radius: 10px;
 }
 
-.kyoto figure img {
+.kyoto aside img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     object-position: bottom;
 }
 
-.kyoto aside {
+.kyoto section {
     width: 60%;
     padding: 2rem;
 }
 
 .kyoto h2 {
     font-size: 2rem;
-    padding: 0px 2rem;
+    padding: 0px 1rem;
 }
 
 .kyoto p {
@@ -212,21 +213,21 @@ main {
     padding-bottom: 10rem;
 }
 
-.osaka figure {
+.osaka aside {
     width: 40%;
     height: 20rem;
     overflow: hidden;
     border-radius: 10px;
 }
 
-.osaka figure img {
+.osaka aside img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     object-position: bottom;
 }
 
-.osaka aside {
+.osaka section {
     width: 60%;
     padding: 2rem;
 }
@@ -248,21 +249,21 @@ main {
     padding-bottom: 10rem;
 }
 
-.hokkaido figure {
+.hokkaido aside {
     width: 40%;
     height: 20rem;
     overflow: hidden;
     border-radius: 10px;
 }
 
-.hokkaido figure img {
+.hokkaido aside img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     object-position: bottom;
 }
 
-.hokkaido aside {
+.hokkaido section {
     width: 60%;
     padding: 2rem;
 }
@@ -282,21 +283,21 @@ main {
     padding: 2rem;
 }
 
-.nara figure {
+.nara aside {
     width: 40%;
     height: 20rem;
     overflow: hidden;
     border-radius: 10px;
 }
 
-.nara figure img {
+.nara aside img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     object-position: center;
 }
 
-.nara aside {
+.nara section {
     width: 60%;
     padding: 2rem;
 }
@@ -577,7 +578,7 @@ footer h1 {
         padding-bottom: 4rem;
     }
 
-    .tokyo figure,.kyoto figure, .osaka figure,.hokkaido figure, .nara figure {
+    .tokyo aside,.kyoto aside, .osaka aside,.hokkaido aside, .nara aside {
         height: 20rem;
     }
 
@@ -654,36 +655,42 @@ footer h1 {
     }
 
     #destination h1 {
+        font-size: 1.5rem;
         padding: 0 1rem;
     }
 
     #destination h2 {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
     }
 
     #destination p {
-        font-size: 1rem;
-        padding: 1rem 0;
+        text-align: left;
+        font-size: 0.8rem;
+        padding: 0.8rem 0;
     }
 
     .tokyo, .kyoto, .nara, .hokkaido, .osaka {
         padding: 0;
     }
 
-    .tokyo figure,.kyoto figure, .osaka figure,.hokkaido figure, .nara figure {
-        height: 15rem;
-    }
-
-    #destination aside {
+    .tokyo section,.kyoto section,.osaka section,.hokkaido section,.nara section {
         padding: 0.8rem;
     }
+
+    .tokyo aside,.kyoto aside, .osaka aside,.hokkaido aside, .nara aside {
+        height: 10rem;
+    }
+
+    /* #destination aside {
+        padding: 0.8rem;
+    } */
 
     #gallery {
         padding: 1rem;
     }
 
     #gallery h1 {
-        font-size: 2rem;
+        font-size: 1.5rem;
         padding: 1rem;
     }
 
@@ -706,6 +713,7 @@ footer h1 {
     }
 
     #cuisine h1 {
+        font-size: 1.5rem;
         padding: 1rem;
     }
 
